@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">PDFPicker</string>
+    <string name="btn_pick_pdf_java">PICK PDF(JAVA)</string>
+    <string name="btn_pick_pdf_kotlin">PICK PDF(KOTLIN)</string>
 </resources>

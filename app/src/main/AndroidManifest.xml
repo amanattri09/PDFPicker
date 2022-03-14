@@ -10,7 +10,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PDFPicker">
         <activity
-            android:name=".ui.kotlin.PdfPickerActivity"
+            android:name=".ui.java.PdfPickerJavaActivity"
+            android:exported="false">
+        </activity>
+        <activity
+            android:name=".ui.kotlin.PdfPickerKotlinActivity"
+            android:exported="false">
+        </activity>
+        <activity android:name=".ui.LauncherActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

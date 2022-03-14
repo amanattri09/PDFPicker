@@ -7,16 +7,16 @@ Code snipit for kotlin : <Br>
   
   Register for result : <Br>
   
-   var resultPdf  = registerForActivityResult(ActivityResultContracts.GetContent()) {
-            binding.tvPickedFileUri.text = it?.let {
-                ""+it.path
-            }
-        }
+   var resultPdf  = registerForActivityResult(ActivityResultContracts.GetContent()) {<Br>
+            binding.tvPickedFileUri.text = it?.let {<Br>
+                ""+it.path<Br>
+            }<Br>
+        }<Br>
 
   On file pick action : <Br>
   
-  binding.btnPickPdf.setOnClickListener {
-            //"application/pdf" is mime type for pdf you can add different mime types for picking different kind of files
-            //e.g image/*
-            resultPdf.launch("application/pdf")
-        }
+  binding.btnPickPdf.setOnClickListener {<Br>
+            //"application/pdf" is mime type for pdf you can add different mime types for picking different kind of files<Br>
+            //e.g image/*<Br>
+            resultPdf.launch("application/pdf")<Br>
+        }<Br>

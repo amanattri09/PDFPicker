@@ -9,10 +9,8 @@ import com.app.pdfpicker.aman.ui.common.BaseActivity
 
 class PdfPickerKotlinActivity : BaseActivity<ActivityMainBinding>() {
 
-    var resultPdf  = registerForActivityResult(ActivityResultContracts.GetContent()) {
-            binding.tvPickedFileUri.text = it?.let {
-                ""+it.path
-            }
+    var resultPdf  = registerForActivityResult(ActivityResultContracts.GetContent()) {uri->
+            binding.tvPickedFileUri.text = uri?.path?:"null"
         }
 
     companion object{

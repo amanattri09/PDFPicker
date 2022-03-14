@@ -6,6 +6,7 @@ import com.app.pdfpicker.aman.ui.common.BaseActivity
 import com.app.pdfpicker.aman.ui.java.PdfPickerJavaActivity
 
 class LauncherActivity : BaseActivity<ActivityLauncherBinding>() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(ActivityLauncherBinding.inflate(layoutInflater))

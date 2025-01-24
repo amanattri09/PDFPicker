@@ -11,6 +11,7 @@ class LauncherActivity : BaseActivity<ActivityLauncherBinding>() {
         super.onCreate(savedInstanceState)
         setContentView(ActivityLauncherBinding.inflate(layoutInflater))
         setListener();
+        //one more change in develop app
     }
 
     private fun setListener() {

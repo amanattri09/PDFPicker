@@ -11,6 +11,7 @@ class LauncherActivity : BaseActivity<ActivityLauncherBinding>() {
         super.onCreate(savedInstanceState)
         setContentView(ActivityLauncherBinding.inflate(layoutInflater))
         setListener();
+        // just to run workflow
     }
 
     private fun setListener() {
